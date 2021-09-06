@@ -1,0 +1,78 @@
+body{
+    background-color: #484848;
+}
+
+.starImg{
+    position: absolute;
+}
+
+#he{
+    margin-left: 500px;
+    margin-top: 15px;
+    color: blue;
+}
+
+#board{
+    margin: 80px 310px;
+}
+
+.box{
+    height: 170px;
+    width: 170px;
+}
+
+.frontCard{
+    background-color: springgreen;
+    color: lightcoral;
+}
+
+#board td{
+    background-color: lightgreen;
+}
+
+button{
+    margin-left: 44%;
+    margin-top: 0.001%;
+}
+
+
+
+.errorMsg{
+    background-color: #ff1a1a;
+    font-size: 60px;
+    text-align: center;
+    width: 300px;
+    height: 140px;
+    flex: 100px;
+
+  }
+  :root {
+    --width: 200px;
+    --x-speed: 13s;
+    --y-speed: 7s;
+    --transition-speed: 2.2s;
+  }
+
+  
+  .el { 
+    width: var(--width);
+    height: var(--width);
+  }
+  
+  .x {
+    animation: x var(--x-speed) linear infinite alternate;
+  }
+  .y {
+    animation: y var(--y-speed) linear infinite alternate;
+  }
+  
+  @keyframes x {
+    100% {
+      transform: translateX(calc(100vw - var(--width)));
+    }
+  }
+  @keyframes y {
+    100% {
+      transform: translateY(calc(100vh - var(--width)));
+    }
+  }
